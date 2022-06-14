@@ -1,7 +1,9 @@
+import { NavigationBar } from "./components/NavigationBar";
+
 export function App() {
   return (
     <>
-      <h1>Init</h1>
+      <NavigationBar/>
     </>
   )
 }
