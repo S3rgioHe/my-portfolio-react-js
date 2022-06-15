@@ -9,6 +9,7 @@ export const Container = styled.div`
     top: 200px;
 
     background-color: #fff;
+    color: var(--background);
     box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
 
     position: relative;
@@ -84,6 +85,31 @@ export const Indicator = styled.div<IndicatorProps>`
     border-radius: 50%;
     background: var(--purple);
     transition: 0.3s;
+    border: 6px solid var(--background);
     
     transform: translateX(${props => props.page * 70}px);
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: -22px;
+        width: 20px;
+        height: 20px;
+        background: transparent;
+        border-top-right-radius: 20px;
+        box-shadow: 1px -10px 0 0 var(--background);
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        right: -22px;
+        width: 20px;
+        height: 20px;
+        background: transparent;
+        border-top-left-radius: 20px;
+        box-shadow: -1px -10px 0 0 var(--background);
+    }
 `;
