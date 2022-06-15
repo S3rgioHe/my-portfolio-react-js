@@ -1,8 +1,12 @@
 import { Container } from "./style";
 
-export function Home() {
+interface HomeProps {
+    active: boolean
+}
+
+export function Home({ active }: HomeProps) {
     return (
-        <Container>
+        <Container active={active} >
             <h1>Home</h1>
         </Container>
     );

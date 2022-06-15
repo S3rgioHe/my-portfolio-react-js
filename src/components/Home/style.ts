@@ -1,6 +1,10 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
+interface ContainerProps {
+  active: boolean;
+}
+
+export const Container = styled.div<ContainerProps>`
   margin: 20px;
     width: 310px;
     height: 70px;
@@ -14,5 +18,7 @@ export const Container = styled.div`
     color: white;
 
     transition: 0.5s;
-    font-style: ;
+
+    ${props => props.active ? '' : 'dsplay: none;'}
+    ${props => props.active ? '' : 'opacity: 0;'}
 `;
