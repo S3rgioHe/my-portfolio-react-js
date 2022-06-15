@@ -1,24 +1,20 @@
 import styled from 'styled-components';
-import { transform } from 'typescript';
 
 export const Container = styled.div`
     margin: 20px;
     width: 310px;
     height: 70px;
+    position: absolute;
 
-    top: 200px;
-
-    background-color: #fff;
-    color: var(--background);
-    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
-
-    position: relative;
-    display: flex;
-
-    border-radius: 10px;
+    bottom: 0;
     margin-left: auto;
     margin-right: auto;
+    left: 0;
+    right: 0;
 
+    background-color: #fff;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
     transition: 0.5s;
 `;
 
@@ -79,7 +75,7 @@ interface IndicatorProps {
 
 export const Indicator = styled.div<IndicatorProps>`
     position: absolute;
-    top: -50%;
+    top: -52%;
     width: 70px;
     height: 70px;
     border-radius: 50%;
@@ -87,7 +83,7 @@ export const Indicator = styled.div<IndicatorProps>`
     transition: 0.3s;
     border: 6px solid var(--background);
     
-    transform: translateX(${props => props.page * 70}px);
+    transform: translateX(${props => props.page * 67}px);
 
     &::before {
         content: '';
