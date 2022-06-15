@@ -37,7 +37,6 @@ export const Button = styled.li<ButtonProps>`
     width: 70px;
     height: 70px;
     z-index: 1;
-    justify-content: center;
     
     &:hover {
         cursor: pointer;
@@ -52,7 +51,7 @@ export const Button = styled.li<ButtonProps>`
         transition: 0.5s;
         margin-left: auto;
         margin-right: auto;
-        margin-top: 5%;
+        margin-top: 25%;
 
         ${props => props.active && 'transform: translateY(-32px)'}
     }
@@ -69,7 +68,7 @@ export const TitleButton = styled.span`
     letter-spacing: 0.05em;
     transition: 0.5s;
     opacity: 0;
-    transform: translateY(18px);
+    transform: translateY(15px);
     left: 25%;
 `;
 
@@ -83,7 +82,7 @@ export const Indicator = styled.div<IndicatorProps>`
     width: 70px;
     height: 70px;
     border-radius: 50%;
-    background: #820ad1;
+    background: var(--purple);
     transition: 0.3s;
     
     transform: translateX(${props => props.page * 70}px);
