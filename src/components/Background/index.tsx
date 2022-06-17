@@ -22,8 +22,6 @@ export function Background() {
             <DiGithubAlt className="icon" size={70}/>,
             <DiChrome className="icon" size={70}/>,
             <DiGitMerge className="icon" size={70}/>,
-            
-            
         ];
 
         const randomIndex = Math.floor(Math.random() * icons.length);

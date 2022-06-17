@@ -79,7 +79,7 @@ export const Indicator = styled.div<IndicatorProps>`
     width: 70px;
     height: 70px;
     border-radius: 50%;
-    background: var(--purple);
+    background: #5bcdf7;
     transition: 0.3s;
     border: 6px solid var(--background);
     
