@@ -23,6 +23,19 @@ export const Container = styled.div<ContainerProps>`
 
     transition: 0.5s;
 
+    @media (max-width: 768px) {
+      margin: 0;
+      left: 15px;
+      right: 0;
+    }
+
+    @media (max-height: 768px) {
+      margin: 0;
+      top: 5px;
+      left: 15px;
+    }
+
+
     ${props => props.active ? '' : 'dsplay: none;'}
     ${props => props.active ? '' : 'opacity: 0;'}
 `;
@@ -31,6 +44,8 @@ export const Column = styled.div`
   .typed {
     font-size: 25px;
   }
+
+  height: 50%;
 `;
 
 export const Title = styled.h1`
@@ -47,7 +62,12 @@ export const SubTitle = styled.h2`
 `;
 
 export const Img = styled.img`
-  height: 45%;
+
+  @media (max-width: 1190px) {
+    display: none;
+  }
+
+  width: 100%;
   margin-top: 10px;
   margin-bottom: 10px;
 `;
