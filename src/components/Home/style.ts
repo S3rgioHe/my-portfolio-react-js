@@ -8,6 +8,7 @@ interface ContainerProps {
 export const Container = styled.div<ContainerProps>`
     margin: 20px;
     position: absolute;
+    z-index: 1;
 
     width: 45%;
 

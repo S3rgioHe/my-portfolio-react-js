@@ -1,3 +1,4 @@
+import { About } from "../About"
 import { Home } from "../Home"
 
 interface PagesPros {
@@ -7,6 +8,9 @@ interface PagesPros {
 export function Pages({ page }: PagesPros) {
 
     return (
-        <Home active={page === 0}/>
+        <>
+            <Home active={page === 0}/>
+            <About active={page === 1}/>
+        </>
     )
 }
