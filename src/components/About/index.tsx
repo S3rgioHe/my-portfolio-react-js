@@ -1,7 +1,5 @@
 import { Container, Summary, Content, ContentText, Title } from "./style";
 import SergioImg from "../../assets/imgs/me.png";
-
-
 interface AboutProps {
     active: boolean
 }
