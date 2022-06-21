@@ -9,13 +9,11 @@ export const Container = styled.div<ContainerProps>`
     position: absolute;
     z-index: 1;
 
-    top: 50%;
+    top: 40%;
     left: 50%;
 
     transform: translate(-50%, -50%);
     display: flex;
-
-    width: 40rem;
 
     box-shadow: 0 1px 20px rgba(69, 90, 100, 0.08);
     transition: 0.5s;
