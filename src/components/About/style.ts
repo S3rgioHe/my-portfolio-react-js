@@ -9,51 +9,32 @@ export const Container = styled.div<ContainerProps>`
     position: absolute;
     z-index: 1;
 
-    width: 45%;
+    top: 50%;
+    left: 50%;
 
-    display: grid;
-    grid-template-columns: 2fr 2fr;
+    transform: translate(-50%, -50%);
+    display: flex;
 
-    top: 20%;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
-    color: white;
-    background: grey;
-    height: 500px;
-    width: 500px;
+    width: 40rem;
 
-
+    box-shadow: 0 1px 20px rgba(69, 90, 100, 0.08);
     transition: 0.5s;
-
-    @media (max-width: 768px) {
-        margin: 0;
-        left: 15px;
-        right: 0;
-    }
-
-    @media (max-height: 768px) {
-        margin: 0;
-        top: 5px;
-        left: 15px;
-    }
 
     ${props => props.active ? '' : 'dsplay: none;'}
     ${props => props.active ? '' : 'opacity: 0;'}
 `;
 
 export const Summary = styled.div`
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
+    width: 35%;
+    background: linear-gradient(to right, #01a9ac, #01dbdf);
+
+    border-top-left-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
+
+    padding: 2.5rem 2rem;
+
+    text-align: center;
+    color: #fff;
 
     @media (max-width: 768px) {
         margin: 0;
@@ -67,30 +48,36 @@ export const Summary = styled.div`
         top: 5px;
         left: 15px;
     }
+
+    img {
+        width: 90%;
+    }
+`;
+
+export const Title = styled.h4`
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    color: #fff;
 `;
 
 export const Content = styled.div`
+    width: 65%;
+    background: #fff;
+    border-top-right-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+    padding: 2.5rem 2rem;
+`;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+export const ContentText = styled.p`
+    font-size: 1.5rem;
     margin-top: 20px;
     margin-bottom: 20px;
     margin-left: auto;
     margin-right: auto;
     left: 0;
     right: 0;
-
-    @media (max-width: 768px) {
-        margin: 0;
-        left: 15px;
-        right: 0;
-    }   
-
-    @media (max-height: 768px) {
-        margin: 0;
-        top: 5px;
-        left: 15px;
-    }
+    text-align: center;
 `;
+

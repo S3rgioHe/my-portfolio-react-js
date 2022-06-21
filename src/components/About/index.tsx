@@ -1,4 +1,4 @@
-import { Container, Summary, Content } from "./style";
+import { Container, Summary, Content, ContentText, Title } from "./style";
 import SergioImg from "../../assets/imgs/me.png";
 
 
@@ -10,21 +10,19 @@ export function About( {active } : AboutProps) {
         <Container active={active}>
             <Summary>
                 <img src={SergioImg} alt="Sérgio" />
-                <h4>Sérgio Henrique</h4>
+                <Title>Sérgio Henrique</Title>
                 <p>Full stack Developer</p>
+                {/* Github ? */}
             </Summary>
             <Content>
-                <Info>
-                    <h3>Information</h3>
-                </Info>
-                <p>
+                <ContentText>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Donec euismod, nisi eu consectetur euismod, nisl nisl
                     consectetur nisi, euismod euismod nisi nisl eu consectetur.
                     Donec euismod, nisi eu consectetur euismod, nisl nisl
                     consectetur nisi, euismod euismod nisi nisl eu consectetur.
                     Donec euismod, nisi eu consectetur euismod, nisl nisl
-                </p>
+                </ContentText>
             </Content>
         </Container>
     );
