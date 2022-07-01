@@ -1,4 +1,5 @@
 import { Container, Row } from "./style";
+import { useState } from "react";
 import { DiBootstrap, DiChrome, DiCode, DiCodeigniter, DiCss3, DiDatabase, DiGit, DiGithubAlt, DiGithubBadge, DiGitMerge, DiHtml5, DiJavascript1, DiPhp, DiPostgresql, DiReact, DiTerminal, DiUbuntu, DiWindows } from "react-icons/di";
 export function Background() {
 
@@ -32,12 +33,14 @@ export function Background() {
         min = Math.ceil(min);
         max = Math.floor(max);
         return Math.floor(Math.random() * (max - min + 1)) + min;
-      }
+    }
+
+    const [icons, setIcons] = useState([...Array(500)].map(() => randomIcons()));
 
     return (
         <Container>
             <Row>
-                {[...Array(500)].map(() => randomIcons())}
+                {icons}
             </Row>
         </Container>
     )

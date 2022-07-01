@@ -11,8 +11,7 @@ export function Projects({ active }: ProjectsProps) {
     return (
         <Container active={active}>
             <Carousel
-                autoplay={true}
-                autoplayInterval={3000}
+                wrapAround={true}
                 slidesToShow={1}
             >
                 <Item>
