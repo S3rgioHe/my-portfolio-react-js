@@ -3,26 +3,26 @@ import { useState } from "react";
 import { DiBootstrap, DiChrome, DiCode, DiCodeigniter, DiCss3, DiDatabase, DiGit, DiGithubAlt, DiGithubBadge, DiGitMerge, DiHtml5, DiJavascript1, DiPhp, DiPostgresql, DiReact, DiTerminal, DiUbuntu, DiWindows } from "react-icons/di";
 export function Background() {
 
+    const iconSize = 70;
+
     function randomIcons() {
         const icons = [
-            <DiCodeigniter className="icon" size={70}/>,
-            <DiBootstrap className="icon" size={70}/>,
-            <DiCode className="icon" size={70}/>,
-            <DiCss3 className="icon" size={70}/>,
-            <DiDatabase className="icon" size={70}/>,
-            <DiGit className="icon" size={70}/>,
-            <DiGithubBadge className="icon" size={70}/>,
-            <DiHtml5 className="icon" size={70}/>,
-            <DiJavascript1 className="icon" size={70}/>, 
-            <DiPhp className="icon" size={70}/>,
-            <DiPostgresql className="icon" size={70}/>,
-            <DiTerminal className="icon" size={70}/>,
-            <DiWindows className="icon" size={70}/>,
-            <DiUbuntu className="icon" size={70}/>,
-            <DiReact className="icon" size={70}/>,
-            <DiGithubAlt className="icon" size={70}/>,
-            <DiChrome className="icon" size={70}/>,
-            <DiGitMerge className="icon" size={70}/>,
+            <DiCodeigniter className="icon" size={iconSize}/>,
+            <DiBootstrap className="icon" size={iconSize}/>,
+            <DiCode className="icon" size={iconSize}/>,
+            <DiCss3 className="icon" size={iconSize}/>,
+            <DiDatabase className="icon" size={iconSize}/>,
+            <DiGit className="icon" size={iconSize}/>,
+            <DiGithubBadge className="icon" size={iconSize}/>,
+            <DiHtml5 className="icon" size={iconSize}/>,
+            <DiPostgresql className="icon" size={iconSize}/>,
+            <DiTerminal className="icon" size={iconSize}/>,
+            <DiWindows className="icon" size={iconSize}/>,
+            <DiUbuntu className="icon" size={iconSize}/>,
+            <DiReact className="icon" size={iconSize}/>,
+            <DiGithubAlt className="icon" size={iconSize}/>,
+            <DiChrome className="icon" size={iconSize}/>,
+            <DiGitMerge className="icon" size={iconSize}/>,
         ];
 
         const randomIndex = Math.floor(Math.random() * icons.length);
