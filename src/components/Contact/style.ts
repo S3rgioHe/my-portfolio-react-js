@@ -11,7 +11,7 @@ export const Container = styled.div<ContainerProps>`
     top: 40%;
     left: 50%;
     
-    width: 70%;
+    width: 40%;
     padding: 2rem;
 
     color: #fff;
@@ -20,7 +20,6 @@ export const Container = styled.div<ContainerProps>`
     border-radius: 0.5rem;
 
     transform: translate(-50%, -50%);
-    display: flex;
 
     transition: 0.5s;
 
@@ -35,20 +34,18 @@ export const Title = styled.h1`
 `;
 
 export const Item = styled.div`
-    
 
+    margin: 1rem 0;
     h1 {
-        font-size: 2rem;
+        font-size: 1.5rem;
         color: #fff;
         text-align: center;
         display: inline;
     }
     .icon {
-
-        width: 1rem;
-        height: 1rem;
-        margin: 1rem;
-        display: inline;
+        
+        width: 3rem;
+        height: 2rem;
     }
 `;
 

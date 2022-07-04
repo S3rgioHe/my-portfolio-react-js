@@ -31,11 +31,8 @@ export const Container = styled.div<ContainerProps>`
     }
 
     @media (max-height: 768px) {
-      margin: 0;
-      top: 5px;
-      left: 15px;
+      top: 40px;
     }
-
 
     ${props => props.active ? '' : 'dsplay: none;'}
     ${props => props.active ? '' : 'opacity: 0;'}

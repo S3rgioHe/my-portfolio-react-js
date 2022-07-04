@@ -12,6 +12,6 @@ export const Container = styled.div`
 export const Row = styled.div`
     .icon {
         color: grey;
-        opacity: 0.1;
+        opacity: 0.05;
     }
 `;
