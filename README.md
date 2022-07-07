@@ -1,2 +1,3 @@
 # Projeto de portfólio utilizando ReactJs
-adicinado sass, e styled components...
+
+Minha ideia foi criar um site que sirva de portfólio, com design minimalista, sendo tudo realizado em apenas uma página, com a interação sendo feita por uma barra de navegação capaz de trocar o conteúdo da tela e o padrão de cores do plano de fundo e da própria barra de navegação. O plano de fundo é criado aleatoriamente por ícones que representam diversas tecnologias, esses icons ficaram em destaque durante a visualização dos projetos, assim quando visto um projeto os ícones que representam as tecnologias utilizadas para a criação dele ganharam um destaque.
