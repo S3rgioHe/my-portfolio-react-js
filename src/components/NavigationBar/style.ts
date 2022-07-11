@@ -82,31 +82,8 @@ export const Indicator = styled.div<IndicatorProps>`
     border-radius: 50%;
     background: #5bcdf7;
     transition: 0.3s;
-    border: 6px solid var(--background);
+    box-shadow: 0px 11px 16px 1px #000000;
     
     transform: translateX(${props => props.page * 67}px);
 
-    &::before {
-        content: '';
-        position: absolute;
-        top: 50%;
-        left: -22px;
-        width: 20px;
-        height: 20px;
-        background: transparent;
-        border-top-right-radius: 20px;
-        box-shadow: 1px -10px 0 0 var(--background);
-    }
-
-    &::after {
-        content: '';
-        position: absolute;
-        top: 50%;
-        right: -22px;
-        width: 20px;
-        height: 20px;
-        background: transparent;
-        border-top-left-radius: 20px;
-        box-shadow: -1px -10px 0 0 var(--background);
-    }
 `;
