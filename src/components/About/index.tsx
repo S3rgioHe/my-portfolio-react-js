@@ -14,12 +14,7 @@ export function About( {active } : AboutProps) {
             </Summary>
             <Content>
                 <ContentText>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Donec euismod, nisi eu consectetur euismod, nisl nisl
-                    consectetur nisi, euismod euismod nisi nisl eu consectetur.
-                    Donec euismod, nisi eu consectetur euismod, nisl nisl
-                    consectetur nisi, euismod euismod nisi nisl eu consectetur.
-                    Donec euismod, nisi eu consectetur euismod, nisl nisl
+                Iniciei com o Desenvolvimento Web a partir da necessidade de criar uma solução para um problema urbano. Esse foi um desafio proposto pela First Lego League, programa internacional de educação que participei no período escolar e desde então venho desenvolvendo minhas habilidades como programador, buscando assim uma empresa que me proporcione novas experiências e desafios.
                 </ContentText>
             </Content>
         </Container>
