@@ -15,7 +15,6 @@ export const Container = styled.div<ContainerProps>`
     transform: translate(-50%, -50%);
     display: flex;
 
-    box-shadow: 0 1px 20px rgba(69, 90, 100, 0.08);
     transition: 0.5s;
 
     ${props => props.active ? '' : 'dsplay: none;'}
@@ -50,6 +49,21 @@ export const Summary = styled.div`
     img {
         width: 90%;
     }
+
+    a {
+        font-size: 1.5rem;
+        margin: 2rem 0.5rem;
+        color: #fff;
+        text-align: center;
+        display: inline;
+        text-decoration: none;
+        transition: 0.2s;
+
+        &:hover {
+            color: #01a9ac;
+            text-decoration: underline;
+        }
+    }
 `;
 
 export const Title = styled.h4`
@@ -62,9 +76,12 @@ export const Title = styled.h4`
 
 export const Content = styled.div`
     width: 65%;
-    background: #fff;
+
+    background: #edeee9;
+
     border-top-right-radius: 0.25rem;
     border-bottom-right-radius: 0.25rem;
+
     padding: 2.5rem 2rem;
 `;
 

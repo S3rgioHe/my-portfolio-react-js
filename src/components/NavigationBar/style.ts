@@ -5,7 +5,7 @@ export const Container = styled.div`
     width: 310px;
     height: 70px;
     position: absolute;
-    z-index: 1;
+    z-index: 1000;
 
     bottom: 0;
     margin-left: auto;
@@ -13,10 +13,15 @@ export const Container = styled.div`
     left: 0;
     right: 0;
 
-    background-color: #fff;
-    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.6);
     border-radius: 10px;
     transition: 0.5s;
+
+    background: rgba(255, 255, 255, 0.13);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2.1px);
+    -webkit-backdrop-filter: blur(2.1px);
+    border: 1px solid rgba(255, 255, 255, 0.11);
 `;
 
 export const ButtonList = styled.ul`
@@ -62,7 +67,7 @@ export const Button = styled.li<ButtonProps>`
 export const TitleButton = styled.span`
     position: absolute;
     font-weight: 400;
-    font-size: 0.75em;
+    font-size: 0.85em;
     letter-spacing: 0.05em;
     transition: 0.5s;
     opacity: 0;
@@ -77,13 +82,17 @@ interface IndicatorProps {
 export const Indicator = styled.div<IndicatorProps>`
     position: absolute;
     top: -52%;
+
     width: 70px;
     height: 70px;
+
     border-radius: 50%;
     background: #5bcdf7;
+
     transition: 0.3s;
-    box-shadow: 0px 11px 16px 1px #000000;
+
+    -webkit-box-shadow: 0px 4px 13px 3px #171717; 
+    box-shadow: 0px 4px 13px 3px #171717;
     
     transform: translateX(${props => props.page * 67}px);
-
 `;
