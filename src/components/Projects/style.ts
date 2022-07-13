@@ -5,7 +5,7 @@ interface ContainerProps {
 }
 export const Container = styled.div<ContainerProps>`
     position: absolute;
-    z-index: 1;
+    ${props => props.active ? `z-index: 2;`: `z-index: 1;`}
 
     top: 40%;
     left: 50%;

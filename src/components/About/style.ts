@@ -7,7 +7,7 @@ interface ContainerProps {
 export const Container = styled.div<ContainerProps>`
     margin: 20px;
     position: absolute;
-    z-index: 1;
+    ${props => props.active ? `z-index: 2;`: `z-index: 1;`}
 
     top: 40%;
     left: 50%;
@@ -50,12 +50,23 @@ export const Summary = styled.div`
         width: 90%;
     }
 
+    .icon {
+        margin-right: 0.5rem;
+    }
+
     a {
-        font-size: 1.5rem;
-        margin: 2rem 0.5rem;
+        display: flex;
+
+        align-items: center;
+        justify-content: center;
+
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+
+
         color: #fff;
-        text-align: center;
-        display: inline;
+
+        font-size: 1.5rem;
         text-decoration: none;
         transition: 0.2s;
 
