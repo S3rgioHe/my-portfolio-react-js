@@ -27,7 +27,7 @@ export const Container = styled.div<ContainerProps>`
     ${props => props.active ? '' : 'opacity: 0;'}
 
     img {
-        width: 35%;
+        width: 30%;
         padding: 0.5rem;
         background: white;
         border-radius: 0.5rem;
@@ -65,7 +65,7 @@ export const Item = styled.li`
         display: inline;
     }
 
-    p {
+    a {
         font-size: 1.5rem;
         margin: 0 0.5rem;
         color: #fff;
