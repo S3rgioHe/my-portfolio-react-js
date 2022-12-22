@@ -12,7 +12,7 @@ export function Home({ active }: HomeProps) {
                 <Column>
                     <Title>Sérgio Henrique</Title>
                     <SubTitle>Desenvolvedor Full Stack</SubTitle>
-                    <Typed className="typed" strings={["Palavra aleatoria", "Teste", "a escolher..."]} typeSpeed={90} loop />
+                    <Typed className="typed" strings={["Desenvolvedor React JS", "Desenvolvedor PHP", "Desenvolvedor Javascript", "Desenvolvedor Codeigniter", "DevOps"]} typeSpeed={90} loop />
                 </Column>
                 <Column>
                     <Img src={SergioPhoto} alt="Sérgio"/>

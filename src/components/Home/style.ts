@@ -1,4 +1,3 @@
-import { title } from "process";
 import styled from "styled-components";
 
 interface ContainerProps {
@@ -34,7 +33,7 @@ export const Container = styled.div<ContainerProps>`
       top: 40px;
     }
 
-    ${props => props.active ? '' : 'dsplay: none;'}
+    ${props => props.active ? '' : 'display: none;'}
     ${props => props.active ? '' : 'opacity: 0;'}
 `;
 
