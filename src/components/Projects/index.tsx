@@ -1,6 +1,8 @@
-import { Container, Item, Elements, Button1, Button2 } from "./style"
+import { Container, Item, Elements, Button1, Button2, Imgs } from "./style"
 import Carousel, { NextButton } from "nuka-carousel"
 import stmoney from "../../assets/imgs/stmoney.svg"
+import atlasclients_home from "../../assets/imgs/atlasclients_home.png"
+import atlasclients_team from "../../assets/imgs/atlasclients_team.png"
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
 
 interface ProjectsProps {
@@ -15,8 +17,6 @@ export function Projects({ active }: ProjectsProps) {
             <Carousel
                 wrapAround={true}
                 slidesToShow={1}
-                autoplay={true}
-                autoplayInterval={10000}
                 renderCenterLeftControls={({ previousSlide }) => (
                     <Button1  onClick={previousSlide}>
                         <FaAngleLeft />
@@ -40,8 +40,21 @@ export function Projects({ active }: ProjectsProps) {
                     </Elements>
                 </Item>
                 <Item>
-                    <h1>Teste 2</h1>
-                    <img src={stmoney} alt="stmoney" />
+                    <Elements>
+                        <div>
+                            <h1>Atlas Clients</h1>
+                            <p>
+                                Plataforma comercial criada com o intuito de gerenciar clientes e agente por times, trazendo praticidade, o sistema conta com 5 tipos de usuários, cada um com ferramentas e telas dedicadas para cumprir com seu objetivo durante o trabalho, possibilitando um maior controle e uma visão mais ampla do relacionamento dos colaboradores com os seus clientes e seu desempenho.
+                            </p>
+                        </div>
+                        <Imgs>
+                            <img src={atlasclients_home} alt="stmoney" />
+                            <img src={atlasclients_team} alt="stmoney" />
+                        </Imgs>
+                    </Elements>
+                </Item>
+                <Item>
+                    
                 </Item>
             </Carousel>
         </Container>

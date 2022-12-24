@@ -24,16 +24,16 @@ export const Item = styled.div`
     width: 100%;
     height: 100%;
 
+    img {  
+        border-radius: 0.5rem;
+        width: 70%;
+    }
+
     h1 {
         font-size: 2rem;
         color: #fff;
         text-align: center;
         margin-bottom: 2rem;
-    }
-
-    img {  
-        border-radius: 0.5rem;
-        width: 60%;
     }
 
     p {
@@ -84,5 +84,22 @@ export const Button2 = styled.button`
 
     &:active {
         transform: scale(4) translateX(10px);
+    }
+`;
+
+export const Imgs = styled.div`
+    display: flex;
+    flex-direction: column;
+    width: 400%;
+
+    img {
+        margin-left: 30%;
+        width: 70% !important;
+
+        &:last-of-type {
+            margin-left: 10%;
+            transform: translateY(-50px);
+        }
+
     }
 `;
