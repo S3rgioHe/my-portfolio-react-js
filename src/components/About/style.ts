@@ -9,7 +9,7 @@ export const Container = styled.div<ContainerProps>`
     position: absolute;
     ${props => props.active ? `z-index: 2;`: `z-index: 1;`}
 
-    top: 40%;
+    top: 45%;
     left: 50%;
 
     transform: translate(-50%, -50%);
@@ -17,7 +17,6 @@ export const Container = styled.div<ContainerProps>`
 
     transition: 0.5s;
 
-    ${props => props.active ? '' : 'dsplay: none;'}
     ${props => props.active ? '' : 'opacity: 0;'}
 `;
 
