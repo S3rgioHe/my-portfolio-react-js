@@ -15,6 +15,12 @@ export const Container = styled.div<ContainerProps>`
     transform: translate(-50%, -50%);
     display: flex;
 
+    @media (max-width: 600px) {
+        flex-direction: column;
+        top: 43%;
+        width: 90%;
+    }
+
     transition: 0.5s;
 
     ${props => props.active ? '' : 'opacity: 0;'}
@@ -32,6 +38,17 @@ export const Summary = styled.div`
     text-align: center;
     color: #fff;
 
+    @media (max-width: 500px) {
+        flex-direction: column;
+        width: 90%;
+        padding: 0;
+        padding-top: 1rem;
+        border-radius: 0;
+        border-top-left-radius: 1rem;
+        border-top-right-radius: 1rem;
+
+    }
+
     @media (max-width: 768px) {
         margin: 0;
         left: 15px;
@@ -47,6 +64,10 @@ export const Summary = styled.div`
 
     img {
         width: 90%;
+
+        @media (max-width: 500px) {
+        width: 30%;
+        }
     }
 
     .icon {
@@ -93,6 +114,16 @@ export const Content = styled.div`
     border-bottom-right-radius: 0.25rem;
 
     padding: 2.5rem 2rem;
+
+    @media (max-width: 500px) {
+        flex-direction: column;
+        width: 90%;
+        padding: 0.5rem 2rem;
+        border-radius: 0;
+        border-bottom-left-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+
+    }
 `;
 
 export const ContentText = styled.p`
@@ -104,5 +135,10 @@ export const ContentText = styled.p`
     left: 0;
     right: 0;
     text-align: center;
+
+    @media (max-width: 600px) {
+        font-size: 1rem;
+        text-align: justify;
+    }
 `;
 

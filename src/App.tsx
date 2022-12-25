@@ -1,7 +1,6 @@
 import { GlobalStyle } from "./style/GlobalStyle";
 import { NavigationBar } from "./components/NavigationBar";
 import { Background } from "./components/Background";
-import { Home } from "./components/Home";
 import { Pages } from "./components/Pages";
 import { useState } from "react";
 

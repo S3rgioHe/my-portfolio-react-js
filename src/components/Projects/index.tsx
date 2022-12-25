@@ -1,13 +1,15 @@
 import { Container, Item, Texts, Button1, Button2, Imgs } from "./style"
 import Carousel, { NextButton } from "nuka-carousel"
-import atlasclients_home from "../../assets/imgs/atlasclients_home.png"
-import atlasclients_team from "../../assets/imgs/atlasclients_team.png"
-import atlasleads_leads from "../../assets/imgs/atlasleads_leads.png"
-import atlasleads_team from "../../assets/imgs/atlasleads_team.png"
+import atlasclients_home from "../../assets/imgs/atlasclients_1.png"
+import atlasclients_team from "../../assets/imgs/atlasclients_2.png"
+import atlasleads_leads from "../../assets/imgs/atlasleads_1.png"
+import atlasleads_team from "../../assets/imgs/atlasleads_2.png"
 import atlaswork_1 from "../../assets/imgs/atlaswork_1.png"
 import atlaswork_2 from "../../assets/imgs/atlaswork_2.png"
 import dtmoney_1 from "../../assets/imgs/dtmoney_1.png"
 import dtmoney_2 from "../../assets/imgs/dtmoney_2.png"
+import psp_1 from "../../assets/imgs/psp_1.png"
+import psp_2 from "../../assets/imgs/psp_2.png"
 
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
 
@@ -36,21 +38,6 @@ export function Projects({ active }: ProjectsProps) {
             >
                 <Item>
                     <Texts>
-                        <h1>Dt Money</h1>
-                        <p>
-                            Meu primeiro projeto utilizando biblioteca React Js, com objetivo de aprendizagem, fez parte do curso Ignite da Rocketseat.
-                        </p>
-                        <span>
-                            Somente exibido projetos totalmente codificados por mim, conteúdo sensível das images censurado.
-                        </span>
-                    </Texts>
-                    <Imgs>
-                        <img src={dtmoney_1}/>
-                        <img src={dtmoney_2}/>
-                    </Imgs>
-                </Item>
-                <Item>
-                    <Texts>
                         <h1>Atlas Clients</h1>
                         <p>
                             Plataforma comercial criada com o intuito de gerenciar clientes e agente por times, trazendo praticidade, o sistema conta com 5 tipos de usuários, cada um com ferramentas e telas dedicadas para cumprir com seu objetivo durante o trabalho, possibilitando um maior controle e uma visão mais ampla do relacionamento dos colaboradores com os seus clientes e seu desempenho.
@@ -64,6 +51,23 @@ export function Projects({ active }: ProjectsProps) {
                         <img src={atlasclients_team}/>
                     </Imgs>
                 </Item>
+
+                <Item>
+                    <Texts>
+                        <h1>Dt Money</h1>
+                        <p>
+                            Meu primeiro projeto utilizando biblioteca React Js, com objetivo de aprendizagem, fez parte do curso Ignite da Rocketseat.
+                        </p>
+                        <span>
+                            Somente exibido projetos totalmente codificados por mim, conteúdo sensível das images censurado.
+                        </span>
+                    </Texts>
+                    <Imgs>
+                        <img src={dtmoney_1}/>
+                        <img src={dtmoney_2}/>
+                    </Imgs>
+                </Item>
+
                 <Item>
                     <Texts>
                         <h1>Atlas Leads</h1>
@@ -79,6 +83,23 @@ export function Projects({ active }: ProjectsProps) {
                         <img src={atlasleads_leads}/>
                     </Imgs>
                 </Item>
+
+                <Item>
+                    <Texts>
+                        <h1>PSP & PSE</h1>
+                        <p>
+                            Criado com o objetivo de intermediar empresas financeiras aos seus clientes que podem confirmar um pagamento ou solicitar empréstimo enviando todas as informações necessárias para a ação através dos sistemas. O usuário pode  acompanhar sua ação diretamente na plataforma, contando com histórico e notificações e envio de emails sobre os status do pagamento ou solicitação de empréstimo.
+                        </p>
+                        <span>
+                            Somente exibido projetos totalmente codificados por mim, conteúdo sensível das images censurado.
+                        </span>
+                    </Texts>
+                    <Imgs>
+                        <img src={psp_2}/>
+                        <img src={psp_1}/>
+                    </Imgs>
+                </Item>
+
                 <Item>
                     <Texts>
                         <h1>Atlas Work</h1>
@@ -90,8 +111,8 @@ export function Projects({ active }: ProjectsProps) {
                         </span>
                     </Texts>
                     <Imgs>
-                        <img src={atlaswork_2}/>
                         <img src={atlaswork_1}/>
+                        <img src={atlaswork_2}/>
                     </Imgs>
                 </Item>
             </Carousel>

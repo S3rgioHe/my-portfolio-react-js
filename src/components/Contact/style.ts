@@ -38,6 +38,16 @@ export const Container = styled.div<ContainerProps>`
         padding: 0.5rem;
         background: white;
         border-radius: 0.5rem;
+
+        @media (max-width: 600px) {
+            display: none;
+        }
+    }
+
+    @media (max-width: 600px) {
+        flex-direction: column;
+        top: 43%;
+        width: 90%;
     }
 `;
 
@@ -45,6 +55,9 @@ export const Title = styled.h1`
     font-size: 2rem;
     color: #fff;
 
+    @media (max-width: 600px) {
+        margin-bottom: 0.7rem;
+    }
 `;
 
 export const Content = styled.div`
@@ -52,6 +65,10 @@ export const Content = styled.div`
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+
+    @media (max-width: 600px) {
+        transform: translateX(-5%);
+    }
 `;
 
 export const List = styled.ul`
@@ -64,12 +81,20 @@ export const Item = styled.li`
 
     margin: 1rem 0;
     display: flex;
+
+    @media (max-width: 600px) {
+        margin: 0.5rem 0;
+    }
     
     h2 {
         font-size: 1.5rem;
         color: #fff;
         text-align: center;
         display: inline;
+
+        @media (max-width: 600px) {
+            display: none;
+        }
     }
 
     a {
@@ -78,11 +103,21 @@ export const Item = styled.li`
         color: #fff;
         text-align: center;
         display: inline;
+
+        @media (max-width: 600px) {
+            font-size: 1rem;
+        }
     }
 
     .icon {
         
         width: 3rem;
         height: 1.7rem;
+
+        @media (max-width: 600px) {
+            width: 2rem;
+            height: 1.7rem;
+            transform: translateY(-5px);
+        }
     }
 `;

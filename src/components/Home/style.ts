@@ -25,12 +25,13 @@ export const Container = styled.div<ContainerProps>`
 
     @media (max-width: 768px) {
       margin: 0;
+      top: 0%;
       left: 15px;
       right: 0;
     }
 
     @media (max-height: 768px) {
-      top: 40px;
+      top: 15%
     }
 
     ${props => props.active ? '' : 'display: none;'}
