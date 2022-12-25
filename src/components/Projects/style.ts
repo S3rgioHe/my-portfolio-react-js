@@ -26,8 +26,9 @@ export const Container = styled.div<ContainerProps>`
 
     @media (max-width: 600px) {
         flex-direction: column;
-        top: 43%;
+        top: 41%;
         width: 85%;
+        padding: 1rem 0;
     }
 
 `;
@@ -81,7 +82,7 @@ export const Item = styled.div`
 
     @media (max-width: 600px) {
         flex-direction: column;
-        height: 32rem;
+        height: 28rem;
     }
 `;
 
@@ -91,7 +92,7 @@ export const Texts = styled.div`
     
     @media (max-width: 600px) {
         width: 90%;
-        margin: 0 auto;
+        margin: 0 auto 0.7rem auto;
     }
 
     h1 {
@@ -101,7 +102,7 @@ export const Texts = styled.div`
         margin: 2rem 0;
 
         @media (max-width: 600px) {
-            margin: 0%;
+            margin: 0.1rem;
             font-size: 2rem;
         }
 
@@ -122,8 +123,9 @@ export const Texts = styled.div`
 
     span {
         @media (max-width: 600px) {
-            font-size: 0.8rem;
+            font-size: 0.7rem;
             text-align: justify;
+            margin-bottom: 0.5rem;
         }
     }
 `;
@@ -160,11 +162,11 @@ export const Imgs = styled.div`
             width: 50%;
 
             &:first-of-type {
-            transform: translateY(-3rem) translateX(15%) scale(1.5);
+                transform: translateY(0.3rem) translateX(25%) scale(1.2);
             }
 
             &:last-of-type {
-                transform: translateY(-2rem) translateX(-15%) scale(1.5);
+                transform: translateY(-2.7rem) translateX(-25%) scale(1.2);
             }
         }
     }

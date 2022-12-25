@@ -17,7 +17,7 @@ export const Container = styled.div<ContainerProps>`
 
     @media (max-width: 600px) {
         flex-direction: column;
-        top: 43%;
+        top: 39%;
         width: 90%;
     }
 
@@ -38,11 +38,11 @@ export const Summary = styled.div`
     text-align: center;
     color: #fff;
 
-    @media (max-width: 500px) {
+    @media (max-width: 600px) {
         flex-direction: column;
         width: 90%;
         padding: 0;
-        padding-top: 1rem;
+        padding-top: 0.5rem;
         border-radius: 0;
         border-top-left-radius: 1rem;
         border-top-right-radius: 1rem;
@@ -65,7 +65,7 @@ export const Summary = styled.div`
     img {
         width: 90%;
 
-        @media (max-width: 500px) {
+        @media (max-width: 600px) {
         width: 30%;
         }
     }
@@ -82,6 +82,11 @@ export const Summary = styled.div`
 
         margin-top: 1rem;
         margin-bottom: 1rem;
+
+        @media (max-width: 600px) {
+            margin: 0.4rem 0;
+            font-size: 1.2rem;
+        }
 
 
         color: #fff;
@@ -115,10 +120,10 @@ export const Content = styled.div`
 
     padding: 2.5rem 2rem;
 
-    @media (max-width: 500px) {
+    @media (max-width: 600px) {
         flex-direction: column;
         width: 90%;
-        padding: 0.5rem 2rem;
+        padding: 0.5rem 1.5rem;
         border-radius: 0;
         border-bottom-left-radius: 1rem;
         border-bottom-right-radius: 1rem;
