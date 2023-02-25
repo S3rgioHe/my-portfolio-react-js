@@ -1,7 +1,7 @@
 import { Container, Item, Title, List, Content } from "./style";
 import { MdOutlineEmail, MdSmartphone } from "react-icons/md";
 import {BsLinkedin} from "react-icons/bs";
-import qrcode from "../../assets/imgs/qrcode_test.png";
+import qrcode from "../../assets/imgs/qrcode.png";
 
 interface ContactProps {
     active: boolean
