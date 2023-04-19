@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-    margin: 20px;
-    width: 310px;
+    margin-bottom: 20px;
+    width: 320px;
     height: 70px;
     position: absolute;
     z-index: 1000;
@@ -22,22 +22,23 @@ export const Container = styled.div`
     backdrop-filter: blur(2.1px);
     -webkit-backdrop-filter: blur(2.1px);
     border: 1px solid rgba(255, 255, 255, 0.11);
+
+    display: flex;
+    justify-content: center;
 `;
 
-export const ButtonList = styled.ul`
+export const ButtonList = styled.div`
     display: flex;
-    padding: 0 20px 0 20px;
-    width: auto;
+    flex-direction: row;
 `;
 
 interface ButtonProps {
     active: boolean
 }
 
-export const Button = styled.li<ButtonProps>`
+export const Button = styled.div<ButtonProps>`
     position: relative;
-    list-style: none;
-    width: 70px;
+    width: 70px !important;
     height: 70px;
     z-index: 1;
     
@@ -46,33 +47,33 @@ export const Button = styled.li<ButtonProps>`
     }
 
     & .icon {
-
-        position: relative;
         display: block;
-        line-height: 75px;
-        font-size: 1.5em;
+        font-size: 1.5rem;
         transition: 0.5s;
         margin-left: auto;
         margin-right: auto;
         margin-top: 25%;
 
+        ${props => props.active ? 'color: #000;' : 'color: #5bcdf7;'}
+
         ${props => props.active && 'transform: translateY(-32px)'}
     }
 
     & .text {
-        ${props => props.active && 'opacity: 1; transform: translateY(5px);'}
+        ${props => props.active && 'opacity: 1; transform: translateY(0px);'}
     }
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 `;
 
 export const TitleButton = styled.span`
-    position: absolute;
     font-weight: 400;
-    font-size: 0.85em;
-    letter-spacing: 0.05em;
+    font-size: 0.85rem;
     transition: 0.5s;
     opacity: 0;
     transform: translateY(15px);
-    left: 25%;
 `;
 
 interface IndicatorProps {
@@ -91,8 +92,7 @@ export const Indicator = styled.div<IndicatorProps>`
 
     transition: 0.3s;
 
-    -webkit-box-shadow: 0px 4px 13px 3px #171717; 
-    box-shadow: 0px 4px 13px 3px #171717;
+    box-shadow: 0px 1px 10px 3px #171717;
     
-    transform: translateX(${props => props.page * 67}px);
+    transform: translateX(${props => props.page * 70}px);
 `;

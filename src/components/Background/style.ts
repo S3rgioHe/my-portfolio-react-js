@@ -6,8 +6,7 @@ export const Container = styled.div`
     flex-direction: column;
     overflow: hidden;
 
-    /* background-color: var(--background); */
-    background: linear-gradient(128deg, rgba(0,83,89,1) 0%, rgba(27,0,69,1) 100%);
+    background: linear-gradient(90deg, rgba(0,83,89,1) 0%, rgba(27,0,69,1) 100%);
 `;
 
 export const Row = styled.div`
