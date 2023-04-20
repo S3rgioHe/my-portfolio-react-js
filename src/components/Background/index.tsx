@@ -6,6 +6,8 @@ import { TbDrone } from "react-icons/tb";
 
 import { SiIos } from "react-icons/si";
 
+import { BsLaptop } from "react-icons/bs";
+
 
 export function Background() {
 
@@ -34,6 +36,7 @@ export function Background() {
             <TbDrone className="icon" size={iconSize}/>,
             <DiAndroid className="icon" size={iconSize}/>,
             <SiIos className="icon" size={iconSize}/>,
+            <BsLaptop className="icon" size={iconSize}/>,
         ];
 
         const randomIndex = Math.floor(Math.random() * icons.length);

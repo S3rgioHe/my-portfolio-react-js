@@ -15,5 +15,5 @@ const fadeIn = keyframes`
 `;
 
 export const Container = styled.div`
-    animation: ${fadeIn} 4s;
+    animation: ${fadeIn} 3.5s;
 `;
