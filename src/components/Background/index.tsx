@@ -39,8 +39,7 @@ export function Background() {
             <BsLaptop className="icon" size={iconSize}/>,
         ];
 
-        const randomIndex = Math.floor(Math.random() * icons.length);
-        return icons[randomIndex];
+        return icons[Math.floor(Math.random() * icons.length)];
     }
 
     const [icons, setIcons] = useState([...Array(300)].map(() => randomIcons()));
