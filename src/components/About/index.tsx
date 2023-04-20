@@ -20,7 +20,7 @@ export function About( {active } : AboutProps) {
             </Summary>
             <Content>
                 <ContentText>
-                Iniciei com o Desenvolvimento Web a partir da necessidade de criar uma solução para um problema urbano. Esse foi um desafio proposto pela First Lego League, programa internacional de educação que participei no período escolar e desde então venho desenvolvendo minhas habilidades como programador, buscando assim uma empresa que me proporcione novas experiências e desafios.
+                Comecei a programar há mais de cinco anos, durante a minha adolescência. Desde então, tenho desenvolvido constantemente minhas habilidades como programador e sempre me desafiando a enfrentar projetos complexos. Sinto-me motivado e proativo em relação ao meu trabalho e minha maior satisfação profissional é entregar projetos que solucionem problemas, criem novas oportunidades e proporcionem boas experiências aos usuários.
                 </ContentText>
             </Content>
         </Container>

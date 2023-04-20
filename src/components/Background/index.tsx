@@ -1,9 +1,15 @@
 import { Container, Row } from "./style";
 import { useState } from "react";
-import { DiBootstrap, DiChrome, DiCode, DiCodeigniter, DiCss3, DiDatabase, DiGit, DiGithubAlt, DiGithubBadge, DiGitMerge, DiHtml5, DiJavascript1, DiPhp, DiPostgresql, DiReact, DiTerminal, DiUbuntu, DiWindows } from "react-icons/di";
+import { DiBootstrap, DiCode, DiCodeigniter, DiCss3, DiDatabase, DiGit, DiGithubAlt, DiGithubBadge, DiGitMerge, DiHtml5, DiJavascript1, DiPhp, DiPostgresql, DiReact, DiTerminal, DiUbuntu, DiWindows, DiLaravel, DiAndroid } from "react-icons/di";
+
+import { TbDrone } from "react-icons/tb";
+
+import { SiIos } from "react-icons/si";
+
+
 export function Background() {
 
-    const iconSize = 70;
+    const iconSize = 80;
 
     function randomIcons() {
         const icons = [
@@ -21,15 +27,20 @@ export function Background() {
             <DiUbuntu className="icon" size={iconSize}/>,
             <DiReact className="icon" size={iconSize}/>,
             <DiGithubAlt className="icon" size={iconSize}/>,
-            <DiChrome className="icon" size={iconSize}/>,
             <DiGitMerge className="icon" size={iconSize}/>,
+            <DiLaravel className="icon" size={iconSize}/>,
+            <DiPhp className="icon" size={iconSize}/>,
+            <DiJavascript1 className="icon" size={iconSize}/>,
+            <TbDrone className="icon" size={iconSize}/>,
+            <DiAndroid className="icon" size={iconSize}/>,
+            <SiIos className="icon" size={iconSize}/>,
         ];
 
         const randomIndex = Math.floor(Math.random() * icons.length);
         return icons[randomIndex];
     }
 
-    const [icons, setIcons] = useState([...Array(500)].map(() => randomIcons()));
+    const [icons, setIcons] = useState([...Array(300)].map(() => randomIcons()));
 
     return (
         <Container>

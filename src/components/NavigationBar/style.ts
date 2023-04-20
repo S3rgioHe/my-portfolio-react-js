@@ -1,4 +1,18 @@
-import styled from 'styled-components';
+import styled, {keyframes} from 'styled-components';
+
+const animationSlideUp = keyframes`
+    0% {
+        opacity: 0;
+    }
+
+    70% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+`;
 
 export const Container = styled.div`
     margin-bottom: 20px;
@@ -25,6 +39,8 @@ export const Container = styled.div`
 
     display: flex;
     justify-content: center;
+
+    animation: ${animationSlideUp} 3s;
 `;
 
 export const ButtonList = styled.div`

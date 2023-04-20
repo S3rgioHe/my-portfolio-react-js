@@ -30,8 +30,8 @@ export const Summary = styled.div`
     width: 35%;
     background: linear-gradient(to right, #01a9ac, #01dbdf);
 
-    border-top-left-radius: 0.25rem;
-    border-bottom-left-radius: 0.25rem;
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
 
     padding: 2.5rem 2rem;
 
@@ -113,12 +113,19 @@ export const Title = styled.h4`
 export const Content = styled.div`
     width: 65%;
 
-    background: #edeee9;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
 
-    border-top-right-radius: 0.25rem;
-    border-bottom-right-radius: 0.25rem;
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
 
     padding: 2.5rem 2rem;
+
+    display: flex;
+    align-items: center;
 
     @media (max-width: 600px) {
         flex-direction: column;
@@ -133,13 +140,9 @@ export const Content = styled.div`
 
 export const ContentText = styled.p`
     font-size: 1.5rem;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
-    text-align: center;
+    text-align: justify;
+    font-weight: 200;
+    color: #fff;
 
     @media (max-width: 600px) {
         font-size: 1rem;
