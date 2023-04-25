@@ -8,6 +8,8 @@ export const Container = styled.div<ContainerProps>`
     margin: 20px;
     position: absolute;
 
+    z-index: 1;
+
     width: 45%;
 
     display: grid;
@@ -34,7 +36,7 @@ export const Container = styled.div<ContainerProps>`
     }
 
     ${props => props.active ? '' : 'display: none;'}
-    ${props => props.active ? '' : 'opacity: 0;'}
+    ${props => props.active ? 'opacity: 1;' : 'opacity: 0;'}
 `;
 
 export const Column = styled.div`

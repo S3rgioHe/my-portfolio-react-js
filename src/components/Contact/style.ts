@@ -23,7 +23,7 @@ export const Container = styled.div<ContainerProps>`
 
     transition: 0.5s;
 
-    ${props => props.active ? '' : 'dsplay: none;'}
+    ${props => props.active ? '' : 'display: none;'}
     ${props => props.active ? '' : 'opacity: 0;'}
 
     background: rgba(255, 255, 255, 0.2);
